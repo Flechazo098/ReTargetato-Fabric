@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "retargetato",
+	"version": "${version}",
+	"name": "ReTargetato",
+	"description": "Stop the monsters from killing each other",
+	"authors": [
+		"Flechazo",
+		"Team Potato"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/retargetato/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.flechazo.retargetato.ReTargetato"
+		]
+	},
+	"mixins": [
+		"retargetato.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
